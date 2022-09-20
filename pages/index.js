@@ -27,8 +27,10 @@ export default function Index() {
             <br/>
             <div className="featured">
                 <img src="/gf1.png" alt=""/>
-                <p><span>-</span> <br/>teaches Different Types of Pizza Flour</p>
-                <button><img src="/play.svg" alt=""/> Watch Trailer</button>
+                <div>
+                    <p><span>-</span> <br/>teaches Different Types of Pizza Flour</p>
+                    <button><img src="/play.svg" alt=""/> Watch Trailer</button>
+                </div>
             </div>
             <br/>
             <br/>
