@@ -27,6 +27,7 @@ function MyApp({Component, pageProps}) {
             <Head>
                 <title>Happy Birthday Mike!</title>
                 <meta charSet="utf-8"/>
+                <meta name="robots" content="noindex, nofollow"/>
                 <meta name="viewport" content="initial-scale=1.0" width="device-width"/>
                 <link rel="icon" type="image/png" href="/favicon.ico"/>
             </Head>
