@@ -33,9 +33,8 @@ export default function Index() {
                 </div>
             </div>
             <br/>
-            <br/>
-            <br/>
             <h1 className="sub-heading">New classes added every month.</h1>
+            <br/>
             <h3 className="col-heading"><span>Pizza</span></h3>
             <ul className="featured-collections">
                 <li className={cType === 'dough' ? "active" : ""}><p onClick={() => setCType('dough')}><span>Dough</span></p></li>

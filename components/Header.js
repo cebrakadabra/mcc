@@ -65,6 +65,7 @@ export default function Header({lang}) {
                     </li>
                 </ul>
             </div>
+            <p className="mike-pp">Mike</p>
             <img className="mike" src="/mike.jpeg" alt=""/>
         </div>
     )
