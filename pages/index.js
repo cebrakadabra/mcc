@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import './index.less';
 
 export default function Index() {
-    const [cType, setCType] = React.useState('dough');
+    const [cType, setCType] = React.useState('toppings');
 
     return (
         <div>
@@ -15,10 +15,7 @@ export default function Index() {
             <br/>
             <br/>
             <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            <img src="/bg-top.png" alt="" style={{width: '100%'}}/>
             <h1 className="h1-top">Stop Scrolling. <br/>Start doing.</h1>
             <p className="teaser-text">2 of the locals favorite Pizza and Bread Bakers. Leaders and icons are here to teach you what they know.</p>
             <br/>
@@ -26,13 +23,12 @@ export default function Index() {
             <br/>
             <br/>
             <div className="featured">
-                <img src="/gf1.png" alt=""/>
+                <img src="/gf-flour.png" alt=""/>
                 <div>
                     <p><span>-</span> <br/>teaches Different Types of Pizza Flour</p>
                     <button><img src="/play.svg" alt=""/> Watch Trailer</button>
                 </div>
             </div>
-            <br/>
             <h1 className="sub-heading">New classes added every month.</h1>
             <br/>
             <h3 className="col-heading"><span>Pizza</span></h3>
@@ -45,36 +41,36 @@ export default function Index() {
                 {cType === 'dough' ? (
                     <div className="collection">
                         <div className="collection--item">
-                            <img src="/cf1.png" alt=""/>
-                            <p><span>-</span> <br/>teaches Different Types of Dough</p>
+                            <img src="/gf-flour.png" alt=""/>
+                            <p><span>-</span> <br/>teaches Different types of flour</p>
                         </div>
                         <div className="collection--item">
-                            <img src="/gf1.png" alt=""/>
-                            <p><span>-</span> <br/>teaches Let it Rest</p>
+                            <img src="/cf-stretching.png" alt=""/>
+                            <p><span>-</span> <br/>teaches Dough stretching</p>
                         </div>
                     </div>
                 ) : null}
                 {cType === 'toppings' ? (
                     <div className="collection">
                         <div className="collection--item">
-                            <img src="/cf1.png" alt=""/>
-                            <p><span>-</span> <br/>teaches Different Types of Dough</p>
+                            <img src="/gf-tomatoes.png" alt=""/>
+                            <p><span>-</span> <br/>teaches Homemade red sauce</p>
                         </div>
                         <div className="collection--item">
-                            <img src="/gf1.png" alt=""/>
-                            <p><span>-</span> <br/>teaches Let it Rest</p>
+                            <img src="/cf-cuttings.png" alt=""/>
+                            <p><span>-</span> <br/>teaches Special Pizza Toppings</p>
                         </div>
                     </div>
                 ) : null}
                 {cType === 'cooking' ? (
                     <div className="collection">
                         <div className="collection--item">
-                            <img src="/cf1.png" alt=""/>
-                            <p><span>-</span> <br/>teaches Different Types of Dough</p>
+                            <img src="/gf-temperature.png" alt=""/>
+                            <p><span>-</span> <br/>teaches temperature and spice</p>
                         </div>
                         <div className="collection--item">
-                            <img src="/gf1.png" alt=""/>
-                            <p><span>-</span> <br/>teaches Let it Rest</p>
+                            <img src="/cf-time.png" alt=""/>
+                            <p><span>-</span> <br/>teaches the right amount of time</p>
                         </div>
                     </div>
                 ) : null}
