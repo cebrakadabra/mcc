@@ -1,13 +1,16 @@
 import React from 'react';
-import Link from 'next/link';
+import getConfig from 'next/config';
+const { serverRuntimeConfig } = getConfig();
+import nookies from 'nookies'
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-import './index.less';
+require('./index.less');
 
 export default function Index() {
     const [cType, setCType] = React.useState('toppings');
+
 
     return (
         <div>
@@ -86,4 +89,26 @@ export default function Index() {
             <Footer />
         </div>
     )
+}
+
+export async function getServerSideProps(context) {
+
+    const { ACCESS_CODE } = serverRuntimeConfig;
+    const cookies = nookies.get(context);
+    const cookieAccessCodeValue = cookies['MCC_MM_2022-10'];
+
+    if (cookieAccessCodeValue !== ACCESS_CODE) {
+        return {
+            redirect: {
+                permanent: false,
+                destination: "/access"
+            }
+        }
+    }
+
+    return {
+        props: {
+            happy: 'birthday'
+        }
+    }
 }

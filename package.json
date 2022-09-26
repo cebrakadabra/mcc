@@ -24,10 +24,13 @@
         "cookieconsent": "^3.1.1",
         "less": "^2.7.3",
         "next": "^10.0.4",
+        "next-absolute-url": "^1.2.2",
         "next-compose-plugins": "^2.2.0",
+        "nookies": "^2.5.2",
         "nprogress": "^0.2.0",
         "react": "16.13.1",
         "react-dom": "16.13.1",
-        "styled-components": "^5.1.1"
+        "styled-components": "^5.1.1",
+        "webpack": "^4.x.x"
     }
 }

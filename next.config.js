@@ -6,7 +6,7 @@ const nextConfig = {
     async headers() {
         return []
     },
-    target: 'serverless',
+    target: 'server',
     api: {
         bodyParser: true
     },
@@ -25,12 +25,15 @@ const nextConfig = {
     },
     // css/less specific configs
     cssModules: false,
-    // cssLoaderOptions: {
-    //     importLoaders: 1,
-    //     localIdentName: "[local]___[hash:base64:5]",
-    // },
+    cssLoaderOptions: {
+        importLoaders: 1,
+        localIdentName: "[local]___[hash:base64:5]",
+    },
     // add trailing slash and index.html files per folder
-    trailingSlash: true
+    trailingSlash: true,
+    serverRuntimeConfig: {
+        ACCESS_CODE: process.env.ACCESS_CODE
+    }
 }
 
 module.exports = withLess(withCSS({
