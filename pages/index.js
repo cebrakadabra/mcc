@@ -11,6 +11,9 @@ require('./index.less');
 export default function Index() {
     const [cType, setCType] = React.useState('toppings');
 
+    const showBDMessage = () => {
+        alert("Happy Birthday Mike!");
+    }
 
     return (
         <div>
@@ -29,7 +32,7 @@ export default function Index() {
                 <img src="/gf-flour.png" alt=""/>
                 <div>
                     <p><span>-</span> <br/>teaches Different Types of Pizza Flour</p>
-                    <button><img src="/play.svg" alt=""/> Watch Trailer</button>
+                    <button><img src="/play.svg" alt="" onClick={() => showBDMessage()}/> Watch Trailer</button>
                 </div>
             </div>
             <h1 className="sub-heading">New classes added every month.</h1>
@@ -43,11 +46,11 @@ export default function Index() {
             <div className="collections">
                 {cType === 'dough' ? (
                     <div className="collection">
-                        <div className="collection--item">
+                        <div className="collection--item" onClick={() => showBDMessage()}>
                             <img src="/gf-flour.png" alt=""/>
                             <p><span>-</span> <br/>teaches Different types of flour</p>
                         </div>
-                        <div className="collection--item">
+                        <div className="collection--item" onClick={() => showBDMessage()}>
                             <img src="/cf-stretching.png" alt=""/>
                             <p><span>-</span> <br/>teaches Dough stretching</p>
                         </div>
@@ -55,11 +58,11 @@ export default function Index() {
                 ) : null}
                 {cType === 'toppings' ? (
                     <div className="collection">
-                        <div className="collection--item">
+                        <div className="collection--item" onClick={() => showBDMessage()}>
                             <img src="/gf-tomatoes.png" alt=""/>
                             <p><span>-</span> <br/>teaches Homemade red sauce</p>
                         </div>
-                        <div className="collection--item">
+                        <div className="collection--item" onClick={() => showBDMessage()}>
                             <img src="/cf-cuttings.png" alt=""/>
                             <p><span>-</span> <br/>teaches Special Pizza Toppings</p>
                         </div>
@@ -67,11 +70,11 @@ export default function Index() {
                 ) : null}
                 {cType === 'cooking' ? (
                     <div className="collection">
-                        <div className="collection--item">
+                        <div className="collection--item" onClick={() => showBDMessage()}>
                             <img src="/gf-temperature.png" alt=""/>
                             <p><span>-</span> <br/>teaches temperature and spice</p>
                         </div>
-                        <div className="collection--item">
+                        <div className="collection--item" onClick={() => showBDMessage()}>
                             <img src="/cf-time.png" alt=""/>
                             <p><span>-</span> <br/>teaches the right amount of time</p>
                         </div>
