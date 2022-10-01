@@ -32,7 +32,7 @@ export default function Index() {
                 <img src="/gf-flour.png" alt=""/>
                 <div>
                     <p><span>-</span> <br/>teaches Different Types of Pizza Flour</p>
-                    <button><img src="/play.svg" alt="" onClick={() => showBDMessage()}/> Watch Trailer</button>
+                    <button onClick={() => showBDMessage()}><img src="/play.svg" alt=""/> Watch Trailer</button>
                 </div>
             </div>
             <h1 className="sub-heading">New classes added every month.</h1>
