@@ -92,7 +92,6 @@ export default function Index() {
 }
 
 export async function getServerSideProps(context) {
-
     const { ACCESS_CODE } = serverRuntimeConfig;
     const cookies = nookies.get(context);
     const cookieAccessCodeValue = cookies['MCC_MM_2022-10'];
